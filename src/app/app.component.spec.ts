@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'organize-my-bookmarks'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('organize-my-bookmarks');
+    expect(app.title).toEqual('Organize My Bookmarks');
   });
 
   it('should render title', () => {

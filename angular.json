@@ -89,7 +89,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "configurations": {
-            "production":{
+            "production": {
               "sourceMap": false,
               "codeCoverage": true,
               "browsers": "ChromeHeadless",
@@ -114,9 +114,21 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "organize-my-bookmarks"
+  "defaultProject": "organize-my-bookmarks",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

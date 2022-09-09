@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href=/organize-my-bookmarks/"
+    "deploy": "ng deploy --base-href=/organize-my-bookmarks/ --no-silent"
   },
   "private": true,
   "dependencies": {

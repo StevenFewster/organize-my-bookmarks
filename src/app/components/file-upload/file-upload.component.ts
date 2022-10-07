@@ -1,6 +1,5 @@
-import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
-import { Subscription, finalize } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-file-upload',
@@ -31,7 +30,7 @@ export class FileUploadComponent {
           this.fileContents = event.target?.result;
           console.log(this.fileContents);
         });
-       reader.readAsDataURL(file);
+       reader.readAsText(file);
     }
   }
 
@@ -39,6 +38,7 @@ export class FileUploadComponent {
     if (this.uploadSub) this.uploadSub.unsubscribe();
     this.reset();
   }
+
 
   reset() {
     this.uploadProgress = null;

@@ -10,19 +10,19 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { AUploadComponent } from './components/a-upload/a-upload.component';
-import { BOrganizeComponent } from './components/b-organize/b-organize.component';
-import { CExportComponent } from './components/c-export/c-export.component';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
-import { MatProgressBarModule } from '@angular/material/progress-bar'
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { UploadComponent } from './pages/upload/upload.component';
+import { OrganizeComponent } from './pages/organize/organize.component';
+import { ExportComponent } from './pages/export/export.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AUploadComponent,
-    BOrganizeComponent,
-    CExportComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    UploadComponent,
+    OrganizeComponent,
+    ExportComponent
   ],
   imports: [
     BrowserModule,
